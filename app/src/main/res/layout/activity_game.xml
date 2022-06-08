@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#c4bfba"
     tools:context=".GameActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_score"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gameView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,21 +23,22 @@
         android:id="@+id/gameView"
         android:layout_width="@dimen/map_size"
         android:layout_height="@dimen/map_size"
+        android:background="#7d9f52"
         app:layout_constraintBottom_toTopOf="@+id/controls"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gameScore"
         tools:context=".GameActivity">
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:gravity="center"-->
-<!--            android:text="GAME OVER"-->
-<!--            android:textColor="@color/yellow"-->
-<!--            android:textSize="34sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:visibility="invisible" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="GAME OVER"-->
+        <!--            android:textColor="@color/yellow"-->
+        <!--            android:textSize="34sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:visibility="invisible" />-->
     </com.tsitokhtsev.snakegame.view.GameView>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -118,13 +118,13 @@ class GameView(context: Context, attrs: AttributeSet?) : FrameLayout(context, at
                         right -= cellMargin
                     }
                     CellType.SNAKE -> {
-                        paint.color = Color.WHITE
+                        paint.color = Color.BLACK
                         top += cellMargin
                         bottom -= cellMargin
                         left += cellMargin
                         right -= cellMargin
                     }
-                    CellType.EMPTY -> paint.color = Color.BLACK
+                    CellType.EMPTY -> paint.color = Color.parseColor("#7d9f52")
                 }
 
                 canvas?.drawRect(
